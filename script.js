@@ -17,21 +17,15 @@ $(function() {
 
 		// console.log(everyone);
 
-
 		for(var i=0; i < web.length; i++) {
-			
-
-			console.log('items relationships: ' + web[i]);
-			
+			// console.log('items relationships: ' + web[i]);
 			everyone.each(function() {
 				if($(this).hasClass(web[i])) {
 					$(this).addClass('highlighted');
 				}
 			});
-
 		}
 	});
-	
 
 	everyone.eq(0).trigger('mouseenter');
 	
