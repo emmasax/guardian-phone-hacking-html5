@@ -8,7 +8,6 @@ body
 
 img
 {
-	opacity: 0.5;
 	vertical-align: bottom;
 }
 
@@ -149,6 +148,11 @@ ul
 {
 	display: block;
 	padding: 20px;
+	left: 180px;
+	top: 300px;
+    padding: 20px;
+    position: absolute;
+	width: 300px;
 }
 
 .js-on .info h3
@@ -257,7 +261,9 @@ ul
 	border-color: #333;
 }
 
-.rm, .jm, .em, .rb, .ac, .nw, .lh, .tt, .bsb, .gu, .cb, .sp, .mf, .ch, .el, .kv, .sh, .jw, .nc, .dc, .ah, .jy, .ps
+.js-on .rm, .js-on .jm, .js-on .em, .js-on .rb, .js-on .ac, .js-on .nw, .js-on .lh, .js-on .tt, .js-on .bsb, 
+.js-on .gu, .js-on .cb, .js-on .sp, .js-on .mf, .js-on .ch, .js-on .el, .js-on .kv, .js-on .sh, .js-on .jw, 
+.js-on .nc, .js-on .dc, .js-on .ah, .js-on .jy, .js-on .ps
 {
 	position: absolute !important;
 }
