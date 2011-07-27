@@ -1,5 +1,6 @@
 body
 {
+/*	background: url(images/circle.png) no-repeat 50px 115px;*/
 	color: #333;
 	margin: 10px;
 	width: 1080px;
@@ -7,12 +8,21 @@ body
 
 img
 {
+	opacity: 0.5;
 	vertical-align: bottom;
 }
 
 .js-on img
 {
 	opacity: 0.4;
+}
+
+img.mask
+{
+	opacity: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 h1, h2, h3, p, li
@@ -188,7 +198,7 @@ ul
 
 .news-corp li, .met li, .others li, .politicians li
 {
-	border-left: 5px solid #ccc;
+/*	border-left: 5px solid #ccc;*/
 	cursor: pointer;
 	margin-bottom: 15px;
 	padding-left: 10px;
@@ -196,6 +206,7 @@ ul
 
 .js-on .news-corp li, .js-on .met li, .js-on .others li, .js-on .politicians li
 {
+	position: relative;
 	padding-left: 0;
 	margin-bottom: 5px;
 	width: 75px;
@@ -215,7 +226,7 @@ ul
 .js-on .middle ul li
 {
 	border-left: 0;
-	border-top: 5px solid #ccc;
+/*	border-top: 5px solid #ccc;*/
 	float: left;
 	margin: 0 5px 0 0;
 	width: 70px;
@@ -244,4 +255,147 @@ ul
 .js-on .politicians .highlighted
 {
 	border-color: #333;
+}
+
+.rm, .jm, .em, .rb, .ac, .nw, .lh, .tt, .bsb, .gu, .cb, .sp, .mf, .ch, .el, .kv, .sh, .jw, .nc, .dc, .ah, .jy, .ps
+{
+	position: absolute !important;
+}
+
+.rm
+{
+	top: 85px;
+	left: 292px;
+}
+
+.jm
+{
+	top: 91px;
+	left: 373px;
+}
+
+.em
+{
+	top: 112px;
+	left: 455px;
+}
+
+.rb
+{
+	top: 163px;
+	left: 523px;
+}
+
+.ac
+{
+	top: 234px;
+	left: 580px;
+}
+
+.nw
+{
+	top: 308px;
+	left: 600px;
+}
+
+.lh
+{
+	top: 384px;
+	left: 615px;
+}
+
+.tt
+{
+	top: 462px;
+	left: 602px;
+}
+
+.bsb
+{
+	top: 537px;
+	left: 569px;
+}
+
+.gu
+{
+	top: 597px;
+	left: 515px;
+}
+
+.cb
+{
+	top: 642px;
+	left: 447px;
+}
+
+.sp
+{
+	top: 668px;
+	left: 373px;
+}
+
+.mf
+{
+	top: 676px;
+	left: 294px;
+}
+
+.ch
+{
+	top: 660px;
+	left: 212px;
+}
+
+.el
+{
+	top: 621px;
+	left: 140px;
+}
+
+.kv
+{
+	top: 565px;
+	left: 80px;
+}
+
+.sh
+{
+	top: 497px;
+	left: 39px;
+}
+
+.jw
+{
+	top: 422px;
+	left: 15px;
+}
+
+.nc
+{
+	top: 341px;
+	left: 18px;
+}
+
+.dc
+{
+	top: 263px;
+	left: 40px;
+}
+
+.ah
+{
+	top: 191px;
+	left: 53px;
+}
+
+.jy
+{
+	top: 135px;
+	left: 111px;
+}
+
+.ps
+{
+	top: 93px;
+	left: 183px;
 }
