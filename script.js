@@ -3,7 +3,7 @@ $(function() {
 	var info = $('.info');
 	var everyone = $('li[data-refs]');
 
-	$('img').after('<img class="mask" src="images/mask.png" width="70" height="70" />');
+	$('img').after('<img class="mask" src="images/mask-grey.png" width="70" height="70" />');
 
 
 	everyone.mouseenter(function(){
@@ -11,6 +11,7 @@ $(function() {
 		info.find('ul, h3').remove();
 		$('.highlighted').removeClass('highlighted');
 		$('.red').remove();
+		$('.blue').attr('src', 'images/mask-grey.png');
 		$this.addClass('highlighted');
 
 		$this.append('<img class="mask red" src="images/highlight.png" width="70" height="70" />');
@@ -26,7 +27,7 @@ $(function() {
 			// console.log('items relationships: ' + web[i]);
 			everyone.each(function() {
 				if($(this).hasClass(web[i])) {
-					$(this).addClass('highlighted');
+					$(this).addClass('highlighted').find('.mask').addClass('blue').attr('src', 'images/mask-blue.png');
 				}
 			});
 		}
