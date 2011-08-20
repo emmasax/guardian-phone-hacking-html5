@@ -1,6 +1,5 @@
 body
 {
-/*	background: url(images/circle.png) no-repeat 50px 115px;*/
 	color: #333;
 	margin: 10px;
 	width: 1080px;
@@ -8,7 +7,15 @@ body
 
 .phone-hacking
 {
+	background: url(images/circle2.gif) no-repeat 10px 10px;
 	position: relative;
+	overflow: hidden;
+	height: 670px;
+}
+
+.resigned
+{
+	background: url(images/resigned.gif) no-repeat 0 0;
 }
 
 img
@@ -18,7 +25,7 @@ img
 
 .js-on img
 {
-	opacity: 0.4;
+	opacity: 0.3;
 }
 
 img.mask
@@ -144,7 +151,6 @@ ul
 
 .info
 {
-	background-color: #fff;
 	display: none;
 	height: 165px;
 }
@@ -152,33 +158,31 @@ ul
 .js-on .info
 {
 	display: block;
-	padding: 20px;
 	left: 180px;
-	top: 240px;
-    padding: 20px;
+	top: 260px;
     position: absolute;
-	width: 300px;
+	width: 350px;
 }
 
 .js-on .info h3
 {
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 20px;
 	display: block;
+	margin-left: 20px;
 }
 
 .js-on .info h3 span
 {
 	display: block;
+	font-style: italic;
 	font-size: 14px;
-	margin-top: 15px;
-	margin-left: 20px;
+	margin-top: 10px;
 }
 
 .middle .info ul
 {
 	padding-left: 20px;
-	margin-left: 20px;
 }
 
 .js-on .middle .info ul
@@ -207,8 +211,6 @@ ul
 
 .news-corp li, .met li, .others li, .politicians li
 {
-/*	border-left: 5px solid #ccc;*/
-	cursor: pointer;
 	margin-bottom: 15px;
 	padding-left: 10px;
 }
@@ -383,7 +385,7 @@ ul
 
 .nc
 {
-	top: 293px;
+	top: 285px;
 	left: 0;
 }
 
