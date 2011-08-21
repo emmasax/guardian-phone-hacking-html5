@@ -5,17 +5,12 @@ body
 	width: 1080px;
 }
 
-.phone-hacking
+.js-on .phone-hacking
 {
 	background: url(images/circle2.gif) no-repeat 10px 10px;
 	position: relative;
 	overflow: hidden;
 	height: 670px;
-}
-
-.resigned
-{
-	background: url(images/resigned.gif) no-repeat 0 0;
 }
 
 img
@@ -44,8 +39,14 @@ h1, h2, h3, p, li
 h1
 {
 	font-size: 21px;
-	line-height: 19px;
+	line-height: 24px;
 	margin: 0 0 15px;
+	width: 200px;
+}
+
+h1 span
+{
+	display: block;
 }
 
 h2
