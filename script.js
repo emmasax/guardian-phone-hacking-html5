@@ -42,10 +42,24 @@ $(function() {
 			switch(code) {
 				case keys.LEFT:
 					var prev = person.prev();
+					/*if(prev.length == 0) {
+						var prevUl = $('.red').closest('ul').prevAll('ul').eq(0);
+						if(prevUl.length == 0) {
+							prevUl = $('.politicians');
+						}
+						prev = prevUl.find('li').eq(0);
+					}*/
 					showRelationships(prev);
 					break;
 				case keys.RIGHT:
 					var next = person.next();
+					if(next.length == 0) {
+						var nextUl = $('.red').closest('ul').nextAll('ul').eq(0);
+						if(nextUl.length == 0) {
+							nextUl = $('.news-corp');
+						}
+						next = nextUl.find('li').eq(0);
+					}
 					showRelationships(next);
 					break;
 			}
