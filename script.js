@@ -1,5 +1,6 @@
 $(function() {
 	$('body').addClass('js-on');
+	$('.phone-hacking').append('<div class="info"></div>');
 	$('img').after('<img class="mask" src="images/mask-grey.png" width="70" height="70" />');
 
 	var info = $('.info'),
@@ -42,13 +43,13 @@ $(function() {
 			switch(code) {
 				case keys.LEFT:
 					var prev = person.prev();
-					/*if(prev.length == 0) {
+					if(prev.length == 0) {
 						var prevUl = $('.red').closest('ul').prevAll('ul').eq(0);
 						if(prevUl.length == 0) {
-							prevUl = $('.politicians');
+							prevUl = $('.met');
 						}
-						prev = prevUl.find('li').eq(0);
-					}*/
+						prev = prevUl.find('li[data-refs]').last()
+					}
 					showRelationships(prev);
 					break;
 				case keys.RIGHT:
