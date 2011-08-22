@@ -13,17 +13,17 @@ body
 	height: 670px;
 }
 
-img
+.phone-hacking img
 {
 	vertical-align: bottom;
 }
 
-.js-on img
+.js-on .phone-hacking img
 {
 	opacity: 0.3;
 }
 
-img.mask
+.phone-hacking img.mask
 {
 	opacity: 1;
 	position: absolute;
@@ -31,12 +31,12 @@ img.mask
 	left: 0;
 }
 
-h1, h2, h3, p, li
+.phone-hacking h1, .phone-hacking h2, .phone-hacking h3, .phone-hacking p, .phone-hacking li
 {
 	font-family: Arial, sans-serif;
 }
 
-h1
+.phone-hacking h1
 {
 	font-size: 21px;
 	line-height: 24px;
@@ -44,19 +44,19 @@ h1
 	width: 200px;
 }
 
-h1 span
+.phone-hacking h1 span
 {
 	display: block;
 }
 
-h2
+.phone-hacking h2
 {
 	font-size: 20px;
 	line-height: 15px;
 	margin: 0 0 10px;
 }
 
-h3
+.phone-hacking h3
 {
 	font-size: 14px;
 	font-weight: bold;
@@ -65,23 +65,19 @@ h3
 	padding: 0 0 5px 0;
 }
 
-.js-on h3
+.js-on .phone-hacking h3
 {
+	display: none;
 	font-weight: normal;
 	padding: 0 0 10px 0;
 }
 
-.js-on h3:hover
+.js-on .phone-hacking h3:hover
 {
 	font-weight: bold;
 }
 
-.js-on h3
-{
-	display: none;
-}
-
-.js-on h3 span
+.js-on .phone-hacking h3 span
 {
 	display: none;
 	color: #666;
@@ -89,55 +85,39 @@ h3
 	margin: 5px 0 0;
 }
 
-p, li
+.phone-hacking p, .phone-hacking li
 {
 	font-size: 12px;
 }
 
-ul, li
+.phone-hacking ul, .phone-hacking li
 {
 	margin: 0;
 	padding: 0;	
 }
 
-li
+.phone-hacking li
 {
 	list-style-type: none;
 }
 
-.js-on .col
-{
-	float: left;
-	width: 80px;
-}
-
-.js-on .first
-{
-	width: 240px;
-}
-
-.js-on .edge
-{
-	width: 160px;
-}
-
-.js-on .col h2
+.js-on .phone-hacking h2
 {
 	display: none;
 }
 
-ul
+.phone-hacking ul
 {
 	overflow: hidden;
 	margin-top: 10px;
 }
 
-.js-on ul ul
+.js-on .phone-hacking ul ul
 {
 	display: none;
 }
 
-.col ul ul li
+.phone-hacking ul ul li
 {
 	border: 0;
 	margin-left: 20px;
@@ -145,18 +125,18 @@ ul
 	margin-bottom: 5px;
 }
 
-.js-on .col ul ul li
+.js-on .phone-hacking ul ul li
 {
 	padding-left: 20px;
 }
 
-.info
+.phone-hacking .info
 {
 	display: none;
 	height: 165px;
 }
 
-.js-on .info
+.js-on .phone-hacking .info
 {
 	display: block;
 	left: 180px;
@@ -165,15 +145,14 @@ ul
 	width: 350px;
 }
 
-.js-on .info h3
+.js-on .phone-hacking .info h3
 {
 	font-weight: bold;
 	font-size: 20px;
 	display: block;
-	margin-left: 20px;
 }
 
-.js-on .info h3 span
+.js-on .phone-hacking .info h3 span
 {
 	display: block;
 	font-style: italic;
@@ -181,42 +160,22 @@ ul
 	margin-top: 10px;
 }
 
-.middle .info ul
-{
-	padding-left: 20px;
-}
-
-.js-on .middle .info ul
-{
-	margin-top: 0;
-}
-
-.js-on .middle .info li
-{
-	border: 0;
-	float: none;
-	list-style-type: disc;
-	padding-bottom: 5px;
-	width: auto;
-}
-
-.js-on .news-corp, .js-on .politicians
+.js-on .phone-hacking .news-corp, .js-on .phone-hacking .politicians
 {
 	margin-top: 80px;
 }
 
-.js-on .news-corp li, .js-on .politicians li
+.js-on .phone-hacking .news-corp li, .js-on .phone-hacking .politicians li
 {
 	float: left;
 }
 
-.news-corp li, .met li, .others li, .politicians li
+.phone-hacking .news-corp li, .phone-hacking .met li, .phone-hacking .others li, .phone-hacking .politicians li
 {
 	margin-bottom: 15px;
-	padding-left: 10px;
 }
 
-.js-on .news-corp li, .js-on .met li, .js-on .others li, .js-on .politicians li
+.js-on .phone-hacking .news-corp li, .js-on .phone-hacking .met li, .js-on .phone-hacking .others li, .js-on .phone-hacking .politicians li
 {
 	position: relative;
 	padding-left: 0;
@@ -224,47 +183,23 @@ ul
 	width: 75px;
 }
 
-.js-on .met li
+.js-on .phone-hacking .met li
 {
 	margin-right: 25px !important;
 	margin-left: 25px !important;
 }
 
-.js-on .middle
-{
-	width: 375px;
-}
-
-.js-on .middle ul li
-{
-	border-left: 0;
-/*	border-top: 5px solid #ccc;*/
-	float: left;
-	margin: 0 5px 0 0;
-	width: 70px;
-}
-
-.highlighted img
+.phone-hacking .highlighted img
 {
 	opacity: 1;
 }
 
-.js-on .news-corp .highlighted
+.js-on .phone-hacking .news-corp .highlighted
 {
 	border-color: red;
 }
 
-.js-on .middle .met .highlighted
-{
-	border-color: green;
-}
-
-.js-on .middle .others .highlighted
-{
-	border-color: #3ac;
-}
-
-.js-on .politicians .highlighted
+.js-on .phone-hacking .politicians .highlighted
 {
 	border-color: #333;
 }
@@ -296,26 +231,27 @@ ul
 
 .rb
 {
+	top: 293px;
+	left: 600px;
+
+}
+
+.ac
+{
 	top: 78px;
 	left: 515px;
 }
 
-.ac
+.nw
 {
 	top: 142px;
 	left: 569px;
 }
 
-.nw
+.lh
 {
 	top: 215px;
 	left: 592px;
-}
-
-.lh
-{
-	top: 293px;
-	left: 600px;
 }
 
 .tt
