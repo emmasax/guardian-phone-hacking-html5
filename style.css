@@ -31,23 +31,24 @@ body
 	left: 0;
 }
 
-.phone-hacking h1, .phone-hacking h2, .phone-hacking h3, .phone-hacking p, .phone-hacking li
+h1, p, .phone-hacking h2, .phone-hacking h3, .phone-hacking p, .phone-hacking li
 {
 	font-family: Arial, sans-serif;
 }
 
-.phone-hacking h1
+h1
 {
 	font-size: 21px;
 	line-height: 24px;
-	margin: 0 0 15px;
-	width: 200px;
+	margin: 0;
 }
 
-.phone-hacking h1 span
+p
 {
-	display: block;
+	font-size: 12px;
+	margin: 5px 0;
 }
+
 
 .phone-hacking h2
 {
