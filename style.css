@@ -2,7 +2,6 @@ body
 {
 	color: #333;
 	margin: 10px;
-	width: 1080px;
 }
 
 .js-on .phone-hacking
@@ -11,24 +10,6 @@ body
 	position: relative;
 	overflow: hidden;
 	height: 670px;
-}
-
-.phone-hacking img
-{
-	vertical-align: bottom;
-}
-
-.js-on .phone-hacking img
-{
-	opacity: 0.3;
-}
-
-.phone-hacking img.mask
-{
-	opacity: 1;
-	position: absolute;
-	top: 0;
-	left: 0;
 }
 
 h1, p, .phone-hacking h2, .phone-hacking h3, .phone-hacking p, .phone-hacking li
@@ -49,20 +30,36 @@ p
 	margin: 5px 0;
 }
 
+.phone-hacking
+{
+	margin-top: 20px
+}
+
+.js-on .phone-hacking
+{
+	margin-top: 0
+}
 
 .phone-hacking h2
 {
+	clear: left;
 	font-size: 20px;
 	line-height: 15px;
 	margin: 0 0 10px;
 }
 
+.js-on .phone-hacking h2
+{
+	display: none;
+}
+
 .phone-hacking h3
 {
+	clear: left;
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 14px;
-	margin: 0;
+	margin: 0 0 5px;
 	padding: 0 0 5px 0;
 }
 
@@ -70,6 +67,7 @@ p
 {
 	display: none;
 	font-weight: normal;
+	margin: 0;
 	padding: 0 0 10px 0;
 }
 
@@ -86,6 +84,28 @@ p
 	margin: 5px 0 0;
 }
 
+.js-on .phone-hacking img.mask
+{
+	opacity: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.phone-hacking img
+{
+	float: left;
+	margin-right: 5px;
+	vertical-align: bottom;
+}
+
+.js-on .phone-hacking img
+{
+	float: none;
+	margin: 0;
+	opacity: 0.3;
+}
+
 .phone-hacking p, .phone-hacking li
 {
 	font-size: 12px;
@@ -99,23 +119,34 @@ p
 
 .phone-hacking li
 {
+	float: left;
 	list-style-type: none;
+	overflow: hidden;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	width: 300px;
 }
 
-.js-on .phone-hacking h2
+.js-on .phone-hacking li
 {
-	display: none;
+	float: none;
+	margin-bottom: 10px;
 }
 
 .phone-hacking ul
 {
 	overflow: hidden;
-	margin-top: 10px;
+}
+
+.js-on .phone-hacking ul
+{
+	margin-top: 0;
 }
 
 .js-on .phone-hacking ul ul
 {
 	display: none;
+	width: 220px;
 }
 
 .phone-hacking ul ul li
@@ -124,11 +155,14 @@ p
 	margin-left: 20px;
 	list-style-type: disc;
 	margin-bottom: 5px;
+	overflow: visible;
+	width: 205px
 }
 
 .js-on .phone-hacking ul ul li
 {
 	padding-left: 20px;
+	width: auto;
 }
 
 .phone-hacking .info
@@ -161,26 +195,22 @@ p
 	margin-top: 10px;
 }
 
+.js-on .phone-hacking .info li
+{
+	list-style-type: disc;
+	margin-left: 20px;
+	overflow: visible;
+}
+
 .js-on .phone-hacking .news-corp, .js-on .phone-hacking .politicians
 {
 	margin-top: 80px;
-}
-
-.js-on .phone-hacking .news-corp li, .js-on .phone-hacking .politicians li
-{
-	float: left;
-}
-
-.phone-hacking .news-corp li, .phone-hacking .met li, .phone-hacking .others li, .phone-hacking .politicians li
-{
-	margin-bottom: 15px;
 }
 
 .js-on .phone-hacking .news-corp li, .js-on .phone-hacking .met li, .js-on .phone-hacking .others li, .js-on .phone-hacking .politicians li
 {
 	position: relative;
 	padding-left: 0;
-	margin-bottom: 5px;
 	width: 75px;
 }
 
