@@ -119,7 +119,6 @@ p
 
 .phone-hacking li
 {
-	float: left;
 	list-style-type: none;
 	overflow: hidden;
 	margin-bottom: 20px;
@@ -129,7 +128,6 @@ p
 
 .js-on .phone-hacking li
 {
-	float: none;
 	margin-bottom: 10px;
 }
 
@@ -152,11 +150,11 @@ p
 .phone-hacking ul ul li
 {
 	border: 0;
-	margin-left: 20px;
+	margin-left: 0;
 	list-style-type: disc;
 	margin-bottom: 5px;
 	overflow: visible;
-	width: 205px
+	width: 220px
 }
 
 .js-on .phone-hacking ul ul li
